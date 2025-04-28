@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  h1 {
+    @apply text-5xl font-semibold text-center p-2 text-white;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold bg-amber-600 p-4 text-white;
+  }
+
+  h3 {
+    @apply font-semibold text-2xl text-slate-500;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-amber-200 p-5 text-xl text-center shadow-lg shadow-gray-300 rounded hover:scale-102 transition-all duration-200;
+  }
+
+  .card span {
+    @apply text-3xl font-bold text-slate-700 mt-3 inline-block;
+  }
+
+  .btn {
+    @apply p-3 bg-amber-600 w-4/11 text-white shadow-lg shadow-gray-400 md:text-2xl hover:bg-amber-400 active:bg-red-600 transition-all duration-200;
+  }
+}
